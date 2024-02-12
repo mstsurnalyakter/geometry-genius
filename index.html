@@ -128,10 +128,24 @@
               <img src="./images/rhombus.png" alt="rhombus" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Rhombus</h2>
-              <p>Area (A) = 0.5 * d1 * b2</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <h2 class="text-center text-2xl">Rhombus</h2>
+              <p class="text-center text-2xl">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+
+
+               <div class="space-x-2">
+                    <input class="border-2 border-gray-700 w-24 p-2" type="text" name="" id="rhombus-diagonal1" placeholder="d1">
+                    <span>cm</span>
+                    <input class="border-2 border-gray-700 w-24 p-2" type="text" name="" id="rhombus-diagonal2" placeholder="d2">
+                    <span>cm</span>
+                </div>
+
+                <div>
+                  <p class="text-2xl">Area: <span id="rhombus-area"></span> <span>cm</span><sup>2</sup></p>
+                </div>
+
+
+              <div class="card-actions">
+                <button id="rhombusBtn" class="btn btn-accent w-full">Calculate</button>
               </div>
             </div>
           </div>
@@ -176,5 +190,6 @@
     <script src="./javascript/triangle.js"></script>
     <script src="./javascript/rectangle.js"></script>
     <script src="./javascript/parallelogram.js"></script>
+    <script src="./javascript/rhombus.js"></script>
   </body>
 </html>
