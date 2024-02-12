@@ -73,14 +73,18 @@
               <img src="./images/rectangle.png" alt="rectangle" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Rectangle</h2>
-              <p>Area(A) = w X l</p>
+              <h2 class="text-center text-2xl">Rectangle</h2>
+              <p class="text-center text-2xl">Area(A) = w X l</p>
 
               <div class="space-x-2">
                 <input class="border-2 w-24 p-2 border-gray-700" type="text" name="" id="rectangle-wide" placeholder="w" />
                 <span>cm</span>
-                <input class="border-2 w-24 p-2 border-gray-700" type="text" name="" id="rectangle-lenght" placeholder="l" />
+                <input class="border-2 w-24 p-2 border-gray-700" type="text" name="" id="rectangle-length" placeholder="l" />
                 <span>cm</span>
+              </div>
+
+              <div>
+                <p class="text-2xl">Area: <span id="rectangle-area"></span> <span>cm<sup>2</sup></span></p>
               </div>
 
               <div class="card-actions">
@@ -155,6 +159,8 @@
       </div>
     </main>
 
+    <!-- JavaScript File link here -->
     <script src="./javascript/triangle.js"></script>
+    <script src="./javascript/rectangle.js"></script>
   </body>
 </html>
