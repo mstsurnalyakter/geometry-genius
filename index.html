@@ -186,10 +186,26 @@
             </figure>
             <div class="card-body">
               <h2 class="card-title">Ellipse</h2>
-              <p>Area (A) = 3.1416 * a * b</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <p>Area (A) = &pi; x a x b</p>
+
+
+                <div class="space-x-2">
+                    <input class="border-2 border-gray-700 w-24 p-2" type="text" name="" id="ellipseA" placeholder="a">
+                    <span>cm</span>
+                    <input class="border-2 border-gray-700 w-24 p-2" type="text" name="" id="ellipseB" placeholder="b">
+                    <span>cm</span>
+                </div>
+
+                <div>
+                  <p class="text-2xl">Area: <span id="ellipse-area"></span> <span>cm</span><sup>2</sup></p>
+                </div>
+
+              <div class="card-actions">
+                <button id="ellipseBtn" class="btn btn-accent w-full">Calculate</button>
               </div>
+
+
+
             </div>
           </div>
         </div>
@@ -207,5 +223,6 @@
     <script src="./javascript/parallelogram.js"></script>
     <script src="./javascript/pentagon.js"></script>
     <script src="./javascript/rhombus.js"></script>
+    <script src="./javascript/ellipse.js"></script>
   </body>
 </html>
