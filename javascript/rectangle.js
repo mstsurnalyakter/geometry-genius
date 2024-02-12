@@ -11,8 +11,8 @@ rectangleBtn.addEventListener("click", () => {
   const wide = parseFloat(rectangleWideText);
   const length = parseFloat(rectangleLengthText);
 
-    if (!wide || !length || !length === 'number' || !wide === 'number') {
-        return alert(`Please Provide valid value.`);
+    if (!wide || !length || length !== "number" || wide !== "number") {
+      return alert(`Please Provide valid value.`);
     }
 
   const area = wide * length;
