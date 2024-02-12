@@ -147,6 +147,7 @@
               <div class="card-actions">
                 <button id="rhombusBtn" class="btn btn-accent w-full">Calculate</button>
               </div>
+
             </div>
           </div>
 
@@ -157,10 +158,24 @@
             </figure>
             <div class="card-body">
               <h2 class="card-title">Pentagon</h2>
-              <p>Area (A) = 0.5 * p * b</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <p>Area (A) = 0.5 x p x b</p>
+
+                <div class="space-x-2">
+                    <input class="border-2 border-gray-700 w-24 p-2" type="text" name="" id="pentagonP" placeholder="p">
+                    <span>cm</span>
+                    <input class="border-2 border-gray-700 w-24 p-2" type="text" name="" id="pentagonQ" placeholder="q">
+                    <span>cm</span>
+                </div>
+
+                <div>
+                  <p class="text-2xl">Area: <span id="pentagon-area"></span> <span>cm</span><sup>2</sup></p>
+                </div>
+
+              <div class="card-actions">
+                <button id="pentagonBtn" class="btn btn-accent w-full">Calculate</button>
               </div>
+
+
             </div>
           </div>
 
@@ -190,6 +205,7 @@
     <script src="./javascript/triangle.js"></script>
     <script src="./javascript/rectangle.js"></script>
     <script src="./javascript/parallelogram.js"></script>
+    <script src="./javascript/pentagon.js"></script>
     <script src="./javascript/rhombus.js"></script>
   </body>
 </html>

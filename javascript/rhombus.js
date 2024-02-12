@@ -10,9 +10,7 @@ rhombusBtn.addEventListener("click", () => {
   const diagonal1 = parseFloat(rhombusDiagonal1Text);
   const diagonal2 = parseFloat(rhombusDiagonal2Text);
 
-   if (!diagonal1 || !diagonal2 || diagonal1 !== "number" || diagonal2 !== "number") {
-     return alert(`Please Provide valid value.`);
-   }
+  
 
   const area = 0.5 * diagonal1 * diagonal2;
   rhombusArea.innerText = area;

@@ -10,9 +10,7 @@ parallelogramBtn.addEventListener("click", () => {
   const base = parseFloat(parallelogramBaseText);
   const height = parseFloat(parallelogramHeightText);
 
-  if (!base || !height || base !== "number" || height !== "number") {
-    return alert(`Please Provide valid value.`);
-  }
+
 
   const area = base * height;
   parallelogramArea.innerText = area;
