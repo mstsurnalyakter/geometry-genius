@@ -125,8 +125,10 @@ const getInputValueById = (inputFieldId) => {
 };
 
 const setInnerTextById = (areaId, area) => {
-  const areaFind = document.getElementById(areaId);
-  return (areaFind.innerText = area);
+  // const areaFind = document.getElementById(areaId);
+  // return (areaFind.innerText = area);
+
+  return document.getElementById(areaId).innerText = area;
 };
 
 // const getButtonById = (btnId) =>{
