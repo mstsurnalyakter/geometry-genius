@@ -15,11 +15,12 @@ let para = document.createElement("p");
     }
 
 
-
 const getButtonById = (btnId) => {
   const button = document.getElementById(btnId);
   return button;
 };
+
+
 
 getButtonById("triangleBtn").addEventListener("click", () => {
 
@@ -112,12 +113,15 @@ getButtonById("ellipseBtn").addEventListener("click", () => {
 
 });
 
-const getInputValueById = (inputFieldId) => {
-  const inputField = document.getElementById(inputFieldId);
-  const inputValueText = inputField.value;
-  const inputValue = parseFloat(inputValueText);
 
-  return inputValue;
+const getInputValueById = (inputFieldId) => {
+  // const inputField = document.getElementById(inputFieldId);
+  // const inputValueText = inputField.value;
+  // const inputValue = parseFloat(inputValueText);
+
+  // return inputValue;
+
+  return parseFloat(document.getElementById(inputFieldId).value);
 };
 
 const setInnerTextById = (areaId, area) => {
